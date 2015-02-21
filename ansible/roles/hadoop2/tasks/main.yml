@@ -1,6 +1,6 @@
 ---
 - name: download Hadoop release {{ hadoop_release }}
-  get_url: url='http://ftp.ps.pl/pub/apache/hadoop/core/{{ hadoop_release }}/{{ hadoop_archive }}'
+  get_url: url='http://archive.apache.org/dist/hadoop/core/{{ hadoop_release }}/{{ hadoop_archive }}'
            dest='/home/vagrant/{{ hadoop_archive }}'
            sha256sum='{{ hadoop_sha256 }}'
 
